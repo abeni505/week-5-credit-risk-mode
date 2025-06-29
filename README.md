@@ -1,3 +1,76 @@
+# Credit Risk Probability Model for Alternative Data
+
+This project focuses on building an end-to-end machine learning solution to assess credit risk for a "buy-now-pay-later" service. Using transactional data from an e-commerce platform, we will engineer features, develop a predictive model to assign a risk probability score to customers, and set the foundation for a deployable API.
+
+---
+
+## 📂 Folder Structure
+
+The project follows a standardized structure to ensure maintainability and scalability.
+
+```
+credit-risk-model/
+├── .github/              # Contains GitHub Actions CI/CD workflows
+├── data/
+│   ├── raw/              # Raw, immutable data files (data.csv)
+│   └── processed/        # Cleaned and processed data ready for modeling
+├── notebooks/
+│   └── 1.0-eda.ipynb     # Exploratory Data Analysis and initial hypotheses
+├── src/
+│   ├── api/              # Source code for the FastAPI application
+│   ├── __init__.py
+│   ├── data_processing.py# Scripts for feature engineering and data cleaning
+│   ├── predict.py        # Script for generating predictions with a trained model
+│   └── train.py          # Script for training the machine learning model
+├── tests/                # Unit tests for the source code
+├── .gitignore            # Specifies files and folders for Git to ignore
+├── Dockerfile            # Instructions to build the Docker image for the API
+├── docker-compose.yml    # Defines and runs the multi-container Docker application
+├── README.md             # This file: project overview and instructions
+└── requirements.txt      # Lists the Python packages required for the project
+```
+
+---
+
+## 🚀 Setup and Usage
+
+Follow these steps to set up your local environment and run the project.
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/abeni505/week-5-credit-risk-mode.git
+cd week-5-credit-risk-model
+```
+
+### 2. Create and Activate Virtual Environment
+It is highly recommended to use a virtual environment to manage project dependencies.
+
+```bash
+# Create the virtual environment
+python3 -m venv venv
+
+# Activate the environment
+# On macOS and Linux:
+source venv/bin/activate
+# On Windows:
+# .\venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+Install all the required Python packages from the `requirements.txt` file.
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run Exploratory Data Analysis
+The initial data exploration can be viewed and run using Jupyter Notebook.
+
+```bash
+# Make sure your virtual environment is active
+jupyter notebook notebooks/1.0-eda.ipynb
+```
+
 # 📊 Credit Scoring Business Understanding
 
 ## 💡 How does the Basel II Accord's emphasis on risk measurement influence our need for an interpretable and well-documented model?
@@ -54,3 +127,6 @@ In a regulated financial context, the need for **transparency, auditability, and
 ✅ **An interpretable model like Logistic Regression is the strongly preferred and responsible choice.**
 
 ---
+
+# Author
+Abenezer M. Woldesenbet

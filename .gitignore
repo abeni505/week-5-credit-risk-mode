@@ -1,0 +1,24 @@
+# Data files
+data/
+processed_data.csv
+*.csv
+
+# Python virtual environment
+venv/
+*.env
+env/
+task-5-venv/
+
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Notebook checkpoints
+.ipynb_checkpoints
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+

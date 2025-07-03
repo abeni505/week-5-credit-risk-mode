@@ -60,6 +60,7 @@ def create_aggregate_features(df):
         
     return customer_agg.reset_index()
 
+
 def main():
     """Main function to run the feature engineering pipeline."""
     raw_data_path = 'data/raw/training.csv'
